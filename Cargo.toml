@@ -1,0 +1,32 @@
+[package]
+authors = ["David Peter <mail@david-peter.de>"]
+categories = ["command-line-utilities"]
+description = "LS_COLORS manager with multiple themes"
+homepage = "https://github.com/sharkdp/vivid"
+license = "MIT/Apache-2.0"
+name = "vivid"
+readme = "README.md"
+repository = "https://github.com/sharkdp/vivid"
+version = "0.11.1"
+exclude = ["demo/*"]
+edition = "2018"
+rust-version = "1.88.0"
+
+[dependencies]
+yaml-rust = "0.4"
+lazy_static = "1.2"
+ansi_colours = "1.0"
+etcetera = "0.11"
+rust-embed = "8.4"
+
+[dependencies.clap]
+version = "4"
+features = ["suggestions", "color", "wrap_help", "cargo"]
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+
+[dev-dependencies]
+assert_cmd = "2.0.14"

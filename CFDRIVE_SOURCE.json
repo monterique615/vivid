@@ -1,0 +1,7 @@
+{
+  "source": "https://github.com/sharkdp/vivid",
+  "commit": "6fe646ee29c349acd4523d02da643881bd81be47",
+  "license": "Apache-2.0",
+  "snapshot": "bounded source subset; workflows excluded",
+  "purpose": "Independent encrypted storage; not an upstream release or endorsement"
+}
